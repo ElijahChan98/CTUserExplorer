@@ -10,11 +10,21 @@
 		5DA3F54325A9F994009839FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F54225A9F994009839FC /* AppDelegate.swift */; };
 		5DA3F54525A9F994009839FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F54425A9F994009839FC /* SceneDelegate.swift */; };
 		5DA3F54725A9F994009839FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F54625A9F994009839FC /* ViewController.swift */; };
-		5DA3F54A25A9F994009839FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DA3F54825A9F994009839FC /* Main.storyboard */; };
 		5DA3F54D25A9F994009839FC /* CTUserExplorer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F54B25A9F994009839FC /* CTUserExplorer.xcdatamodeld */; };
 		5DA3F54F25A9F998009839FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DA3F54E25A9F998009839FC /* Assets.xcassets */; };
 		5DA3F55225A9F998009839FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DA3F55025A9F998009839FC /* LaunchScreen.storyboard */; };
 		5DA3F55D25A9F998009839FC /* CTUserExplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F55C25A9F998009839FC /* CTUserExplorerTests.swift */; };
+		5DA3F56A25A9FBB1009839FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DA3F56825A9FBB1009839FC /* Main.storyboard */; };
+		5DA3F57125A9FC20009839FC /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F56F25A9FC20009839FC /* LoginScreenViewController.swift */; };
+		5DA3F57225A9FC20009839FC /* LoginScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA3F57025A9FC20009839FC /* LoginScreenViewController.xib */; };
+		5DA3F57425AA0191009839FC /* CTUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F57325AA0191009839FC /* CTUser.swift */; };
+		5DA3F57725AA0268009839FC /* CTUserPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F57625AA0268009839FC /* CTUserPersistence.swift */; };
+		5DA3F57925AA0432009839FC /* LoginScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F57825AA0432009839FC /* LoginScreenViewModel.swift */; };
+		5DA3F57C25AA044C009839FC /* RegisterScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F57A25AA044C009839FC /* RegisterScreenViewController.swift */; };
+		5DA3F57D25AA044C009839FC /* RegisterScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA3F57B25AA044C009839FC /* RegisterScreenViewController.xib */; };
+		5DA3F57F25AA07B9009839FC /* RegisterScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F57E25AA07B9009839FC /* RegisterScreenViewModel.swift */; };
+		5DA3F58225AA1486009839FC /* CTUserExplorerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F58125AA1486009839FC /* CTUserExplorerUtils.swift */; };
+		5DA3F58425AA1DD5009839FC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F58325AA1DD5009839FC /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +42,6 @@
 		5DA3F54225A9F994009839FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DA3F54425A9F994009839FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5DA3F54625A9F994009839FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5DA3F54925A9F994009839FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5DA3F54C25A9F994009839FC /* CTUserExplorer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CTUserExplorer.xcdatamodel; sourceTree = "<group>"; };
 		5DA3F54E25A9F998009839FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DA3F55125A9F998009839FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +49,17 @@
 		5DA3F55825A9F998009839FC /* CTUserExplorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTUserExplorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA3F55C25A9F998009839FC /* CTUserExplorerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTUserExplorerTests.swift; sourceTree = "<group>"; };
 		5DA3F55E25A9F998009839FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DA3F56925A9FBB1009839FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Supporting Files/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		5DA3F56F25A9FC20009839FC /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		5DA3F57025A9FC20009839FC /* LoginScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginScreenViewController.xib; sourceTree = "<group>"; };
+		5DA3F57325AA0191009839FC /* CTUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTUser.swift; sourceTree = "<group>"; };
+		5DA3F57625AA0268009839FC /* CTUserPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTUserPersistence.swift; sourceTree = "<group>"; };
+		5DA3F57825AA0432009839FC /* LoginScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewModel.swift; sourceTree = "<group>"; };
+		5DA3F57A25AA044C009839FC /* RegisterScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenViewController.swift; sourceTree = "<group>"; };
+		5DA3F57B25AA044C009839FC /* RegisterScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterScreenViewController.xib; sourceTree = "<group>"; };
+		5DA3F57E25AA07B9009839FC /* RegisterScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenViewModel.swift; sourceTree = "<group>"; };
+		5DA3F58125AA1486009839FC /* CTUserExplorerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTUserExplorerUtils.swift; sourceTree = "<group>"; };
+		5DA3F58325AA1DD5009839FC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +101,15 @@
 		5DA3F54125A9F994009839FC /* CTUserExplorer */ = {
 			isa = PBXGroup;
 			children = (
-				5DA3F54225A9F994009839FC /* AppDelegate.swift */,
-				5DA3F54425A9F994009839FC /* SceneDelegate.swift */,
-				5DA3F54625A9F994009839FC /* ViewController.swift */,
-				5DA3F54825A9F994009839FC /* Main.storyboard */,
-				5DA3F54E25A9F998009839FC /* Assets.xcassets */,
-				5DA3F55025A9F998009839FC /* LaunchScreen.storyboard */,
-				5DA3F55325A9F998009839FC /* Info.plist */,
+				5DA3F58025AA1465009839FC /* Utilities */,
+				5DA3F56E25A9FC01009839FC /* ViewModel */,
+				5DA3F56D25A9FBFB009839FC /* ViewController */,
+				5DA3F56C25A9FBF6009839FC /* View */,
+				5DA3F56B25A9FBEF009839FC /* Model */,
+				5DA3F56725A9FB16009839FC /* Supporting Files */,
+				5DA3F56825A9FBB1009839FC /* Main.storyboard */,
 				5DA3F54B25A9F994009839FC /* CTUserExplorer.xcdatamodeld */,
+				5DA3F55325A9F998009839FC /* Info.plist */,
 			);
 			path = CTUserExplorer;
 			sourceTree = "<group>";
@@ -100,6 +121,63 @@
 				5DA3F55E25A9F998009839FC /* Info.plist */,
 			);
 			path = CTUserExplorerTests;
+			sourceTree = "<group>";
+		};
+		5DA3F56725A9FB16009839FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DA3F55025A9F998009839FC /* LaunchScreen.storyboard */,
+				5DA3F54225A9F994009839FC /* AppDelegate.swift */,
+				5DA3F54425A9F994009839FC /* SceneDelegate.swift */,
+				5DA3F54625A9F994009839FC /* ViewController.swift */,
+				5DA3F54E25A9F998009839FC /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DA3F56B25A9FBEF009839FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5DA3F57325AA0191009839FC /* CTUser.swift */,
+				5DA3F57625AA0268009839FC /* CTUserPersistence.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5DA3F56C25A9FBF6009839FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5DA3F57025A9FC20009839FC /* LoginScreenViewController.xib */,
+				5DA3F57B25AA044C009839FC /* RegisterScreenViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5DA3F56D25A9FBFB009839FC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5DA3F57A25AA044C009839FC /* RegisterScreenViewController.swift */,
+				5DA3F56F25A9FC20009839FC /* LoginScreenViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5DA3F56E25A9FC01009839FC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5DA3F57825AA0432009839FC /* LoginScreenViewModel.swift */,
+				5DA3F57E25AA07B9009839FC /* RegisterScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5DA3F58025AA1465009839FC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5DA3F58125AA1486009839FC /* CTUserExplorerUtils.swift */,
+				5DA3F58325AA1DD5009839FC /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +263,9 @@
 			files = (
 				5DA3F55225A9F998009839FC /* LaunchScreen.storyboard in Resources */,
 				5DA3F54F25A9F998009839FC /* Assets.xcassets in Resources */,
-				5DA3F54A25A9F994009839FC /* Main.storyboard in Resources */,
+				5DA3F57D25AA044C009839FC /* RegisterScreenViewController.xib in Resources */,
+				5DA3F57225A9FC20009839FC /* LoginScreenViewController.xib in Resources */,
+				5DA3F56A25A9FBB1009839FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,10 +283,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DA3F57725AA0268009839FC /* CTUserPersistence.swift in Sources */,
 				5DA3F54725A9F994009839FC /* ViewController.swift in Sources */,
+				5DA3F57925AA0432009839FC /* LoginScreenViewModel.swift in Sources */,
+				5DA3F57C25AA044C009839FC /* RegisterScreenViewController.swift in Sources */,
 				5DA3F54325A9F994009839FC /* AppDelegate.swift in Sources */,
 				5DA3F54D25A9F994009839FC /* CTUserExplorer.xcdatamodeld in Sources */,
+				5DA3F57125A9FC20009839FC /* LoginScreenViewController.swift in Sources */,
 				5DA3F54525A9F994009839FC /* SceneDelegate.swift in Sources */,
+				5DA3F57425AA0191009839FC /* CTUser.swift in Sources */,
+				5DA3F58225AA1486009839FC /* CTUserExplorerUtils.swift in Sources */,
+				5DA3F57F25AA07B9009839FC /* RegisterScreenViewModel.swift in Sources */,
+				5DA3F58425AA1DD5009839FC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,20 +317,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5DA3F54825A9F994009839FC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5DA3F54925A9F994009839FC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5DA3F55025A9F998009839FC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5DA3F55125A9F998009839FC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5DA3F56825A9FBB1009839FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DA3F56925A9FBB1009839FC /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -369,6 +457,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 847YLVY9X7;
 				INFOPLIST_FILE = CTUserExplorer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,7 +465,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = elijahchan.CTUserExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -387,6 +476,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 847YLVY9X7;
 				INFOPLIST_FILE = CTUserExplorer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,7 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = elijahchan.CTUserExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

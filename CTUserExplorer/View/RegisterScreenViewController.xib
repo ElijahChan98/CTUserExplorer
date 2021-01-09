@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterScreenViewController" customModule="CTUserExplorer" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmPasswordTextField" destination="dhq-C2-aKe" id="No6-DT-6if"/>
+                <outlet property="countryTextField" destination="Rf3-3p-AT4" id="79J-NF-uc6"/>
+                <outlet property="createAccountButton" destination="dOt-Oh-Xg2" id="kOE-1V-vKM"/>
+                <outlet property="passwordTextField" destination="hCN-b3-a8y" id="lW4-k2-N8X"/>
+                <outlet property="usernameTextField" destination="Z9P-28-Olb" id="3D2-GP-irh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create New Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGq-Tx-8vc">
+                    <rect key="frame" x="44.5" y="30" width="231" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="RK3-8F-HEH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z9P-28-Olb">
+                    <rect key="frame" x="35" y="140" width="250" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="jda-G9-kea"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hCN-b3-a8y">
+                    <rect key="frame" x="35" y="199" width="250" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="Rf9-kK-Ayu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dhq-C2-aKe">
+                    <rect key="frame" x="35" y="258" width="250" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="dpu-QY-MpG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select your country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rf3-3p-AT4">
+                    <rect key="frame" x="35" y="317" width="250" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="ALj-iR-5gs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOt-Oh-Xg2">
+                    <rect key="frame" x="85" y="381" width="150" height="30"/>
+                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="KCD-BD-3HZ"/>
+                        <constraint firstAttribute="width" constant="150" id="pcP-Xj-lmn"/>
+                    </constraints>
+                    <state key="normal" title="Create Account">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onCreateAccountClick:" destination="-1" eventType="touchUpInside" id="pBL-rl-Kj1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="dOt-Oh-Xg2" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="2Ua-hY-Fsf"/>
+                <constraint firstItem="hCN-b3-a8y" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="2wb-jP-1jA"/>
+                <constraint firstItem="dOt-Oh-Xg2" firstAttribute="top" secondItem="Rf3-3p-AT4" secondAttribute="bottom" constant="30" id="3pR-LQ-1Dy"/>
+                <constraint firstItem="hCN-b3-a8y" firstAttribute="top" secondItem="Z9P-28-Olb" secondAttribute="bottom" constant="25" id="VPg-F3-cz1"/>
+                <constraint firstItem="tGq-Tx-8vc" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Xzz-dq-f5k"/>
+                <constraint firstItem="Rf3-3p-AT4" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="b5U-h5-Zji"/>
+                <constraint firstItem="Z9P-28-Olb" firstAttribute="top" secondItem="tGq-Tx-8vc" secondAttribute="bottom" constant="30" id="eo0-5Y-V1f"/>
+                <constraint firstItem="Z9P-28-Olb" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="fu3-qn-iFn"/>
+                <constraint firstItem="dhq-C2-aKe" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="nY7-7h-kV9"/>
+                <constraint firstItem="dhq-C2-aKe" firstAttribute="top" secondItem="hCN-b3-a8y" secondAttribute="bottom" constant="25" id="qIp-Xb-UJR"/>
+                <constraint firstItem="Rf3-3p-AT4" firstAttribute="top" secondItem="dhq-C2-aKe" secondAttribute="bottom" constant="25" id="xV0-Mc-7mY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dOt-Oh-Xg2" secondAttribute="bottom" constant="10" id="yZI-Y6-0iL"/>
+                <constraint firstItem="tGq-Tx-8vc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="yq2-Wo-2am"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+</document>
