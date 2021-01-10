@@ -43,5 +43,14 @@ extension UsersListViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let user = viewModel.users[indexPath.row]
+        let viewModel = UserDetailsViewModel()
+        viewModel.user = user
+        let detailsView = UserDetailsViewController()
+        detailsView.viewModel = viewModel
+        
+        self.navigationController?.pushViewController(detailsView, animated: true)
+    }
     
 }

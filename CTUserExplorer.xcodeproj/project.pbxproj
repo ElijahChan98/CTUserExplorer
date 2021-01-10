@@ -34,6 +34,9 @@
 		5DA3F59325AB2A43009839FC /* UsersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F59225AB2A43009839FC /* UsersListViewModel.swift */; };
 		5DA3F59625AB2E16009839FC /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F59425AB2E16009839FC /* UserCell.swift */; };
 		5DA3F59725AB2E16009839FC /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA3F59525AB2E16009839FC /* UserCell.xib */; };
+		5DA3F59A25AB36AF009839FC /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F59825AB36AF009839FC /* UserDetailsViewController.swift */; };
+		5DA3F59B25AB36AF009839FC /* UserDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA3F59925AB36AF009839FC /* UserDetailsViewController.xib */; };
+		5DA3F59D25AB3B44009839FC /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F59C25AB3B44009839FC /* UserDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		5DA3F59225AB2A43009839FC /* UsersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewModel.swift; sourceTree = "<group>"; };
 		5DA3F59425AB2E16009839FC /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		5DA3F59525AB2E16009839FC /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		5DA3F59825AB36AF009839FC /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		5DA3F59925AB36AF009839FC /* UserDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailsViewController.xib; sourceTree = "<group>"; };
+		5DA3F59C25AB3B44009839FC /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +179,7 @@
 				5DA3F57025A9FC20009839FC /* LoginScreenViewController.xib */,
 				5DA3F57B25AA044C009839FC /* RegisterScreenViewController.xib */,
 				5DA3F59525AB2E16009839FC /* UserCell.xib */,
+				5DA3F59925AB36AF009839FC /* UserDetailsViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,6 +191,7 @@
 				5DA3F56F25A9FC20009839FC /* LoginScreenViewController.swift */,
 				5DA3F58E25AB1759009839FC /* UsersListViewController.swift */,
 				5DA3F59425AB2E16009839FC /* UserCell.swift */,
+				5DA3F59825AB36AF009839FC /* UserDetailsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -194,6 +202,7 @@
 				5DA3F57825AA0432009839FC /* LoginScreenViewModel.swift */,
 				5DA3F57E25AA07B9009839FC /* RegisterScreenViewModel.swift */,
 				5DA3F59225AB2A43009839FC /* UsersListViewModel.swift */,
+				5DA3F59C25AB3B44009839FC /* UserDetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -298,6 +307,7 @@
 			files = (
 				5DA3F55225A9F998009839FC /* LaunchScreen.storyboard in Resources */,
 				5DA3F54F25A9F998009839FC /* Assets.xcassets in Resources */,
+				5DA3F59B25AB36AF009839FC /* UserDetailsViewController.xib in Resources */,
 				5DA3F57D25AA044C009839FC /* RegisterScreenViewController.xib in Resources */,
 				5DA3F57225A9FC20009839FC /* LoginScreenViewController.xib in Resources */,
 				5DA3F56A25A9FBB1009839FC /* Main.storyboard in Resources */,
@@ -330,6 +340,8 @@
 				5DA3F54325A9F994009839FC /* AppDelegate.swift in Sources */,
 				5DA3F59025AB1759009839FC /* UsersListViewController.swift in Sources */,
 				5DA3F58925AB11E8009839FC /* User.swift in Sources */,
+				5DA3F59A25AB36AF009839FC /* UserDetailsViewController.swift in Sources */,
+				5DA3F59D25AB3B44009839FC /* UserDetailsViewModel.swift in Sources */,
 				5DA3F54D25A9F994009839FC /* CTUserExplorer.xcdatamodeld in Sources */,
 				5DA3F57125A9FC20009839FC /* LoginScreenViewController.swift in Sources */,
 				5DA3F58B25AB1445009839FC /* UserAddress.swift in Sources */,
