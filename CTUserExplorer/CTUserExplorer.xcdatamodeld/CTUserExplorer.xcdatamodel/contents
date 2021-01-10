@@ -4,6 +4,11 @@
         <attribute name="countryOfOrigin" attributeType="String"/>
         <attribute name="password" attributeType="String"/>
         <attribute name="username" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="username"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <elements>
         <element name="CTUserEntity" positionX="-63" positionY="-18" width="128" height="88"/>

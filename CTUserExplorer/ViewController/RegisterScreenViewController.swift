@@ -21,7 +21,7 @@ class RegisterScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = Messages.REGISTER_SUCCESS
+        self.title = Messages.REGISTER_ACCOUNT
         createPickerView()
     }
 

@@ -56,7 +56,7 @@ class UsersListViewModel {
         }
     }
     
-    private func calculateIndexPathsToReload(from newUsersCount: Int) -> [IndexPath] {
+    func calculateIndexPathsToReload(from newUsersCount: Int) -> [IndexPath] {
         let startIndex = users.count - newUsersCount
         let endIndex = startIndex + newUsersCount
         return (startIndex..<endIndex).map { IndexPath(row: $0, section: 0) }
