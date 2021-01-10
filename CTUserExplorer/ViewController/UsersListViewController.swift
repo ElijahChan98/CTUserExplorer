@@ -9,6 +9,7 @@
 import UIKit
 
 class UsersListViewController: UIViewController, UsersListViewModelDelegate {
+    
     @IBOutlet weak var tableview: UITableView!
     let viewModel = UsersListViewModel()
     override func viewDidLoad() {
@@ -22,15 +23,21 @@ class UsersListViewController: UIViewController, UsersListViewModelDelegate {
         
         viewModel.fetchUsers()
     }
-
-    func reloadTableView() {
-        self.tableview.reloadData()
+    
+    func reloadTableView(with newIndexPathsToReload: [IndexPath]?) {
+        guard let newIndexPathsToReload = newIndexPathsToReload else {
+            tableview.isHidden = false
+            tableview.reloadData()
+            return
+        }
+        
+        tableview.insertRows(at: newIndexPathsToReload, with: .automatic)
     }
 }
 
 extension UsersListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.users.count
+        return viewModel.currentCount
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -54,4 +61,9 @@ extension UsersListViewController: UITableViewDataSource, UITableViewDelegate {
         self.navigationController?.pushViewController(detailsView, animated: true)
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row + 1 == viewModel.currentCount {
+            viewModel.fetchUsers()
+        }
+    }
 }

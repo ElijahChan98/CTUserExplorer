@@ -14,6 +14,8 @@ class UserAddress: Codable {
         case suite = "suite"
         case city = "city"
         case zipcode = "zipcode"
+        
+        case coordinates = "geo"
     }
     
     var street: String?
@@ -21,11 +23,12 @@ class UserAddress: Codable {
     var city: String?
     var zipcode: String?
     
+    var coordinates: UserAddressGeo?
 }
 
 class UserAddressGeo: Codable {
     enum CodingKeys: String, CodingKey {
-        case long = "long"
+        case long = "lng"
         case lat = "lat"
     }
     var long: String?

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import CoreLocation
+import MapKit
 
 class UserDetailsViewModel {
     var delegate: UserDetailsViewModelDelegate?
@@ -22,6 +24,24 @@ class UserDetailsViewModel {
         }
         let fullAddress = [address.suite ?? "", address.street ?? "", address.city ?? "", address.zipcode ?? ""]
         return fullAddress.joined(separator: " ")
+    }
+    
+    func openCoordinatesOnMap(){
+        guard let latitudeString = user.address?.coordinates?.lat, let longitudeString = user.address?.coordinates?.long, let latitude = CLLocationDegrees(latitudeString), let longitude = CLLocationDegrees(longitudeString) else {
+            return
+        }
+        
+        let regionDistance:CLLocationDistance = 5000
+        let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
+        let regionSpan = MKCoordinateRegion(center: coordinates, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
+        let options = [
+            MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center),
+            MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)
+        ]
+        let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = "Coordinate Location"
+        mapItem.openInMaps(launchOptions: options)
     }
 }
 

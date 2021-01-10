@@ -48,6 +48,6 @@ class UserDetailsViewController: UIViewController, UserDetailsViewModelDelegate 
     }
 
     @IBAction func onViewOnMapButtonClick(_ sender: Any) {
+        viewModel.openCoordinatesOnMap()
     }
-
 }
