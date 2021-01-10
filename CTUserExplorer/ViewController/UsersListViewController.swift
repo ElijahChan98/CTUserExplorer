@@ -8,30 +8,40 @@
 
 import UIKit
 
-class UsersListViewController: UIViewController {
-
+class UsersListViewController: UIViewController, UsersListViewModelDelegate {
+    @IBOutlet weak var tableview: UITableView!
+    let viewModel = UsersListViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        RequestManager.shared.fetchUsers(since: 0, limit: 10) { (success, payload) in
-            if success, let payloads = payload?["payloads"] as? [[String: Any]] {
-                for payload in payloads {
-                    let user = User.createUserFromPayload(payload)
-                    print(user)
-                }
-            }
-        }
-        // Do any additional setup after loading the view.
+        viewModel.delegate = self
+        
+        self.tableview.delegate = self
+        self.tableview.dataSource = self
+        self.tableview.register(UINib.init(nibName: "UserCell", bundle: nil), forCellReuseIdentifier: "UserCell")
+        
+        viewModel.fetchUsers()
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func reloadTableView() {
+        self.tableview.reloadData()
     }
-    */
+}
 
+extension UsersListViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.users.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = self.tableview.dequeueReusableCell(withIdentifier: "UserCell") as! UserCell
+        let user = viewModel.users[indexPath.row]
+        
+        cell.nameLabel.text = user.name
+        cell.usernameLabel.text = user.username
+        cell.companyNameLabel.text = user.company?.companyName
+        
+        return cell
+    }
+    
+    
 }
