@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="127" id="KGk-i7-Jjw" customClass="UserCell" customModule="CTUserExplorer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="552" height="127"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="552" height="127"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME LABEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TvH-53-wFs">
+                        <rect key="frame" x="20" y="10" width="106" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="5xz-z3-GzQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyd-y6-Omy">
+                        <rect key="frame" x="20" y="40" width="78" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="3F0-Hz-UQa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1E-Fa-5r8">
+                        <rect key="frame" x="20" y="70" width="73" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="tPA-Hf-LNF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="L1E-Fa-5r8" firstAttribute="top" secondItem="Cyd-y6-Omy" secondAttribute="bottom" constant="10" id="5l2-bu-Zmx"/>
+                    <constraint firstItem="L1E-Fa-5r8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="6Sc-eL-kSx"/>
+                    <constraint firstAttribute="bottom" secondItem="L1E-Fa-5r8" secondAttribute="bottom" constant="10" id="EdW-bw-aVz"/>
+                    <constraint firstItem="TvH-53-wFs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ZMW-eF-sgL"/>
+                    <constraint firstItem="TvH-53-wFs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="cZj-80-CBi"/>
+                    <constraint firstItem="Cyd-y6-Omy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="e5a-5Z-Lzr"/>
+                    <constraint firstItem="Cyd-y6-Omy" firstAttribute="top" secondItem="TvH-53-wFs" secondAttribute="bottom" constant="10" id="eFq-ax-wQl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="companyNameLabel" destination="L1E-Fa-5r8" id="Hws-Yg-8dj"/>
+                <outlet property="nameLabel" destination="TvH-53-wFs" id="Xli-Fs-1lV"/>
+                <outlet property="usernameLabel" destination="Cyd-y6-Omy" id="uw9-tD-hwW"/>
+            </connections>
+            <point key="canvasLocation" x="234.78260869565219" y="156.36160714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

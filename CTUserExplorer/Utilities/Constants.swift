@@ -9,6 +9,7 @@
 import UIKit
 
 struct Constants {
+    static let USERS_BASE_URL = "https://jsonplaceholder.typicode.com/users"
 }
 
 struct Messages {

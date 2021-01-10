@@ -25,6 +25,15 @@
 		5DA3F57F25AA07B9009839FC /* RegisterScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F57E25AA07B9009839FC /* RegisterScreenViewModel.swift */; };
 		5DA3F58225AA1486009839FC /* CTUserExplorerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F58125AA1486009839FC /* CTUserExplorerUtils.swift */; };
 		5DA3F58425AA1DD5009839FC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F58325AA1DD5009839FC /* Constants.swift */; };
+		5DA3F58725AB105D009839FC /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F58625AB105D009839FC /* RequestManager.swift */; };
+		5DA3F58925AB11E8009839FC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F58825AB11E8009839FC /* User.swift */; };
+		5DA3F58B25AB1445009839FC /* UserAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F58A25AB1445009839FC /* UserAddress.swift */; };
+		5DA3F58D25AB1461009839FC /* UserCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F58C25AB1461009839FC /* UserCompany.swift */; };
+		5DA3F59025AB1759009839FC /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F58E25AB1759009839FC /* UsersListViewController.swift */; };
+		5DA3F59125AB1759009839FC /* UsersListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA3F58F25AB1759009839FC /* UsersListViewController.xib */; };
+		5DA3F59325AB2A43009839FC /* UsersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F59225AB2A43009839FC /* UsersListViewModel.swift */; };
+		5DA3F59625AB2E16009839FC /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA3F59425AB2E16009839FC /* UserCell.swift */; };
+		5DA3F59725AB2E16009839FC /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA3F59525AB2E16009839FC /* UserCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +69,15 @@
 		5DA3F57E25AA07B9009839FC /* RegisterScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenViewModel.swift; sourceTree = "<group>"; };
 		5DA3F58125AA1486009839FC /* CTUserExplorerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTUserExplorerUtils.swift; sourceTree = "<group>"; };
 		5DA3F58325AA1DD5009839FC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5DA3F58625AB105D009839FC /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		5DA3F58825AB11E8009839FC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5DA3F58A25AB1445009839FC /* UserAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAddress.swift; sourceTree = "<group>"; };
+		5DA3F58C25AB1461009839FC /* UserCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCompany.swift; sourceTree = "<group>"; };
+		5DA3F58E25AB1759009839FC /* UsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
+		5DA3F58F25AB1759009839FC /* UsersListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersListViewController.xib; sourceTree = "<group>"; };
+		5DA3F59225AB2A43009839FC /* UsersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewModel.swift; sourceTree = "<group>"; };
+		5DA3F59425AB2E16009839FC /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		5DA3F59525AB2E16009839FC /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +119,7 @@
 		5DA3F54125A9F994009839FC /* CTUserExplorer */ = {
 			isa = PBXGroup;
 			children = (
+				5DA3F58525AB1041009839FC /* Manager */,
 				5DA3F58025AA1465009839FC /* Utilities */,
 				5DA3F56E25A9FC01009839FC /* ViewModel */,
 				5DA3F56D25A9FBFB009839FC /* ViewController */,
@@ -140,6 +159,9 @@
 			children = (
 				5DA3F57325AA0191009839FC /* CTUser.swift */,
 				5DA3F57625AA0268009839FC /* CTUserPersistence.swift */,
+				5DA3F58825AB11E8009839FC /* User.swift */,
+				5DA3F58A25AB1445009839FC /* UserAddress.swift */,
+				5DA3F58C25AB1461009839FC /* UserCompany.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,8 +169,10 @@
 		5DA3F56C25A9FBF6009839FC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5DA3F58F25AB1759009839FC /* UsersListViewController.xib */,
 				5DA3F57025A9FC20009839FC /* LoginScreenViewController.xib */,
 				5DA3F57B25AA044C009839FC /* RegisterScreenViewController.xib */,
+				5DA3F59525AB2E16009839FC /* UserCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -158,6 +182,8 @@
 			children = (
 				5DA3F57A25AA044C009839FC /* RegisterScreenViewController.swift */,
 				5DA3F56F25A9FC20009839FC /* LoginScreenViewController.swift */,
+				5DA3F58E25AB1759009839FC /* UsersListViewController.swift */,
+				5DA3F59425AB2E16009839FC /* UserCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -167,6 +193,7 @@
 			children = (
 				5DA3F57825AA0432009839FC /* LoginScreenViewModel.swift */,
 				5DA3F57E25AA07B9009839FC /* RegisterScreenViewModel.swift */,
+				5DA3F59225AB2A43009839FC /* UsersListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -178,6 +205,14 @@
 				5DA3F58325AA1DD5009839FC /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5DA3F58525AB1041009839FC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5DA3F58625AB105D009839FC /* RequestManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +301,8 @@
 				5DA3F57D25AA044C009839FC /* RegisterScreenViewController.xib in Resources */,
 				5DA3F57225A9FC20009839FC /* LoginScreenViewController.xib in Resources */,
 				5DA3F56A25A9FBB1009839FC /* Main.storyboard in Resources */,
+				5DA3F59125AB1759009839FC /* UsersListViewController.xib in Resources */,
+				5DA3F59725AB2E16009839FC /* UserCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,12 +322,19 @@
 			files = (
 				5DA3F57725AA0268009839FC /* CTUserPersistence.swift in Sources */,
 				5DA3F54725A9F994009839FC /* ViewController.swift in Sources */,
+				5DA3F58D25AB1461009839FC /* UserCompany.swift in Sources */,
+				5DA3F58725AB105D009839FC /* RequestManager.swift in Sources */,
 				5DA3F57925AA0432009839FC /* LoginScreenViewModel.swift in Sources */,
 				5DA3F57C25AA044C009839FC /* RegisterScreenViewController.swift in Sources */,
+				5DA3F59625AB2E16009839FC /* UserCell.swift in Sources */,
 				5DA3F54325A9F994009839FC /* AppDelegate.swift in Sources */,
+				5DA3F59025AB1759009839FC /* UsersListViewController.swift in Sources */,
+				5DA3F58925AB11E8009839FC /* User.swift in Sources */,
 				5DA3F54D25A9F994009839FC /* CTUserExplorer.xcdatamodeld in Sources */,
 				5DA3F57125A9FC20009839FC /* LoginScreenViewController.swift in Sources */,
+				5DA3F58B25AB1445009839FC /* UserAddress.swift in Sources */,
 				5DA3F54525A9F994009839FC /* SceneDelegate.swift in Sources */,
+				5DA3F59325AB2A43009839FC /* UsersListViewModel.swift in Sources */,
 				5DA3F57425AA0191009839FC /* CTUser.swift in Sources */,
 				5DA3F58225AA1486009839FC /* CTUserExplorerUtils.swift in Sources */,
 				5DA3F57F25AA07B9009839FC /* RegisterScreenViewModel.swift in Sources */,
