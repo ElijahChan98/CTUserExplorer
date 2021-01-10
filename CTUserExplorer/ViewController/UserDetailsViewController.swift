@@ -22,10 +22,17 @@ class UserDetailsViewController: UIViewController, UserDetailsViewModelDelegate 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.prefersLargeTitles = true
         viewModel.delegate = self
         viewModel.viewLoaded()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.navigationBar.prefersLargeTitles = false
     }
     
     func reloadUIElements() {

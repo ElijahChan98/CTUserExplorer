@@ -16,8 +16,6 @@ class LoginScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func onLoginButtonClick(_ sender: Any) {
@@ -28,7 +26,8 @@ class LoginScreenViewController: UIViewController {
         viewModel.loginUser(username: usernameTextField.text!, password: passwordTextField.text!) { (success, message) in
             CTUserExplorerUtils.showGenericOkAlert(title: nil, message: message, handler: { (action) in
                 if success {
-                    //push to dashboard
+                    let navController = UINavigationController(rootViewController: UsersListViewController())
+                    (UIApplication.shared.delegate as? AppDelegate)?.changeRootViewController(navController)
                 }
             })
         }

@@ -19,4 +19,7 @@ struct Messages {
     static let REGISTER_SUCCESS = "Registration Successful!"
     static let FILL_UP_REQUIRED_FIELDS = "Please fill up all of the required fields"
     static let PASSWORDS_DO_NOT_MATCH = "Input passwords do not match!"
+    
+    static let REGISTER_ACCOUNT = "Register Account"
+    static let USER_LIST = "User List"
 }

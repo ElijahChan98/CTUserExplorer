@@ -13,6 +13,7 @@ class UsersListViewController: UIViewController, UsersListViewModelDelegate {
     let viewModel = UsersListViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = Messages.USER_LIST
         viewModel.delegate = self
         
         self.tableview.delegate = self

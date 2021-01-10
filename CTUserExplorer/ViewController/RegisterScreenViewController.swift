@@ -21,6 +21,7 @@ class RegisterScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = Messages.REGISTER_SUCCESS
         createPickerView()
     }
 
@@ -36,7 +37,8 @@ class RegisterScreenViewController: UIViewController {
         viewModel.registerUser(username: usernameTextField.text!, password: passwordTextField.text!, country: countryTextField.text!) { (success, message) in
             CTUserExplorerUtils.showGenericOkAlert(title: nil, message: message, handler: { (action) in
                 if success {
-                    //push to dashboard
+                    let navController = UINavigationController(rootViewController: UsersListViewController())
+                    (UIApplication.shared.delegate as? AppDelegate)?.changeRootViewController(navController)
                 }
             })
         }
